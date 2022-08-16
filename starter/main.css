@@ -3,9 +3,17 @@
     padding: 0;
     margin: 0;
 }
+@font-face {
+    font-family: 'custom-Lato';
+    src: url('./font/Lato-Bold.ttf')format('truetype'),
+     url('./font/Lato-Bold.ttf')format('truetype'),
+     url('./font/lato-regular-webfont.woff')format('woff'),
+     url('./font/lato-regular-webfont.woff2')format('woff2'),;
+}
 body{
-    font-family: 'Lato', sans-serif;
+    /*font-family: 'Lato', sans-serif; */
     height: 1500px;
+    font-family: "custom-Lato", sans-serif;
 }
 
 
@@ -69,14 +77,63 @@ span a{
 .fqs__item p{
     text-align: justify;
 }
-.smart-line{
+ .smart-line{
     /* border: 3px solid tomato; */
     height: 50px;
     width: 90%;
     background: var(--main-color);
-    margin: 20px auto;
+    margin: 20px auto; 
     
 
+}
+.foodcard-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.foodcard__item{
+    /* border: 3px solid tomato; */
+    width: 320px;
+    overflow: hidden;
+}
+.foodcard__image-holder{
+    /* border: 3px solid black; */
+    height: 250px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    overflow: hidden;
+}
+.foodcard__image-holder img{
+    width: 100%;
+    height: 100%;
+}
+.foodcard__text-holder h4,
+.foodcard__text-holder h3 {
+    margin: 10px 0;
+}
+.foodcard__text-holder span{
+    text-decoration: line-through;
+    color: var(--text-color);
+}
+.foodcard__text-holder button:hover{
+    color: var(--main-text);
+}
+.explore-foods{
+    padding: 30px 0;
+    text-align: center;
+}
+.foodcard__text-holder{
+    text-align: left;
+}
+.explore-foods h2+p{
+    margin: 20px;
+}
+.explore-foods h2{
+    color: var(--main-color);
+}
+.foodcard__text-holder h3{
+    border-bottom: 0.5px solid rgba(119, 119, 119, 0.5);
+    padding-bottom: 10px;
 }
 
 
@@ -172,3 +229,36 @@ span a{
 .footer-button-holder button:hover{
     background: var(--main-color-dark);
 }  
+.about-us_banner-holder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid tomato; */
+    text-align: center;
+    height: 250px;
+    background: var(--gray-gradient), url('./about3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.about-us_banner-holder h2{
+    color: var(--main-color);
+}
+.about-us_banner-holder p{
+    margin: 20px 0;
+}
+.btn-waves{
+    margin-top: 20px;
+    font-size: 30px;
+    height: 60px;
+    border-radius: 50%;
+    width: 60px;
+    color: var(--white-color);
+    background: var(--main-color);
+    border: 2px solid var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: ripple 2s infinite;
+    
+}
