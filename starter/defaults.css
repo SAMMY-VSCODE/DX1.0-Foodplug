@@ -7,7 +7,7 @@
     --white-color: #ffff;
     --black-color: #000;
     --gradient: linear-gradient(to right, rgba(58, 44, 47, 0.5), rgba(14, 3, 1, 0.5));
-    --gray-gradient: linear-gradient(to right, rgba(58, 44, 47, 0.5), rgba(250, 234, 232, 0.5));
+    --gray-gradient: linear-gradient(to right, rgba(219, 195, 201, 0.5), rgba(250, 234, 232, 0.5));
 
 
 }
